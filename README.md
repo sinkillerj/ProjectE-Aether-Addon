@@ -18,4 +18,4 @@ IRC Client: \#ProjectE on irc.esper.net
 Webchat: http://webchat.esper.net/?nick=&channels=ProjectE
 
 #Compiling
-Place both the Aether jar (and its dependencies), along with the ProjectE jar, inside a folder called "libs" in the root (where gradlew is). CodeChickenCore will automatically deobf these jars for you are runtime.
+Place both the Aether jar (and its dependencies), along with the ProjectE jar, inside a folder called "libs" in the root (where gradlew is). CodeChickenCore will automatically deobf these jars for you at runtime.
