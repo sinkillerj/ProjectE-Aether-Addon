@@ -1,0 +1,17 @@
+[
+{
+  "modid": "peaether",
+  "name": "ProjectE Aether Addon",
+  "description": "Adds new content that bridges ProjectE and Aether 2.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "logoFile": "assets/peaether/logo.png",
+  "url": "http://minecraft.curseforge.com/mc-mods/234981-projecte-aether-addon",
+  "updateUrl": "http://minecraft.curseforge.com/mc-mods/234981-projecte-aether-addon",
+  "authorList": [ "sinkillerj" ],
+  "credits": "",
+  "parent": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

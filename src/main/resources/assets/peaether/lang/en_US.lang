@@ -1,0 +1,11 @@
+itemGroup.peaetherCTab=ProjectE Aether Addon
+
+item.alchemicalcoin.name=Alchemical Coin
+
+tile.coinmill.name=Alchemical Coin Mill
+
+peaether.coinmill.tooltip1=Converts Aether Coins to Alchemical Coins and vice versa.
+
+peaether.alchemicalcoin.tooltip1=Transmutable EMC source.
+peaether.alchemicalcoin.tooltip2=Coverted to Aether Coins and
+peaether.alchemicalcoin.tooltip3=vice versa using the Coin Mill.
