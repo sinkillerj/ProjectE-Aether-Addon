@@ -1,0 +1,11 @@
+itemGroup.peaetherCTab=ProjectE Aether Addon
+
+item.alchemicalcoin.name=Алхимическая монетка
+
+tile.coinmill.name=Завод алхимических монет
+
+peaether.coinmill.tooltip1=Преобразует эфирные монетки в алхимические монетки и наоборот.
+
+peaether.alchemicalcoin.tooltip1=Источник EMC.
+peaether.alchemicalcoin.tooltip2=Можно преобразовать в эфирные монетки и
+peaether.alchemicalcoin.tooltip3=наоборот, используя монетный завод.
