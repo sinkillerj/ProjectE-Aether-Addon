@@ -19,6 +19,8 @@ import net.minecraftforge.common.config.Configuration;
 
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
+import net.aetherteam.aether.blocks.AetherBlocks;
+import net.aetherteam.aether.items.AetherItems;
 import moze_intel.projecte.gameObjs.ObjHandler;
 import moze_intel.projecte.api.ProjectEAPI;
 
@@ -50,6 +52,38 @@ public class peaether
 	{
 		PEAConfig.init(new Configuration(event.getSuggestedConfigurationFile()));
 
+		ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(peaether.alchemicalCoin, 1), PEAConfig.alchemicalCoinEMC);
+
+		if (PEAConfig.addAetherEMC)
+		{
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.GreenSkyrootSapling, 1), 32);
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.BlueSkyrootSapling, 1), 32);
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.DarkBlueSkyrootSapling, 1), 32);
+
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.GreenSkyrootLeaves, 1, 1), 1);
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.BlueSkyrootLeaves, 1, 1), 1);
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.DarkBlueSkyrootLeaves, 1, 1), 1);
+
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.WhiteRose, 1), 16);
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.PurpleFlower, 1), 16);
+
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.AetherDirt, 1), 1);
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.AetherGrass, 1), 2);
+
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.TallAetherGrass, 1), 1);
+
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.AetherLog, 1, 0), 32);
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.AetherLog, 1, 2), 32);
+
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.Holystone, 1, 1), 1);
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherBlocks.Holystone, 1, 3), 2);
+
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherItems.AmbrosiumShard, 1), 14);
+
+			ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(AetherItems.ZaniteGemstone, 1), 256);
+		}
+
+
 		GameRegistry.registerItem(alchemicalCoin, "alchemicalCoinItem");
 
 		GameRegistry.registerBlock(coinMill, "coinMillBlock");
@@ -62,7 +96,10 @@ public class peaether
 
 		GameRegistry.addRecipe(new ShapedOreRecipe(coinMill, "x x", "zyz", "xxx", 'x', "ingotGold", 'y', new ItemStack(ObjHandler.covalence, 1, 2), 'z', "ingotIron"));
 
-		ProjectEAPI.getEMCProxy().registerCustomEMC(new ItemStack(peaether.alchemicalCoin, 1), PEAConfig.alchemicalCoinEMC);
+		if (PEAConfig.addPERecipes)
+		{
+			GameRegistry.addShapelessRecipe(new ItemStack(ObjHandler.covalence, 40, 0), AetherBlocks.Holystone, AetherBlocks.Holystone, AetherBlocks.Holystone, AetherBlocks.Holystone, AetherBlocks.Holystone, AetherBlocks.Holystone, AetherBlocks.Holystone, AetherBlocks.Holystone, AetherItems.AmbrosiumShard);
+		}
 
 	}
 
