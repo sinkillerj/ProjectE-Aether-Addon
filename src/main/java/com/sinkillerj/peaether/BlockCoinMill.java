@@ -18,7 +18,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.EntityItem;
 
-import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.ChatComponentTranslation;
 
 import net.aetherteam.aether.player.PlayerAether;
 
@@ -87,7 +87,7 @@ public class BlockCoinMill extends Block implements ITileEntityProvider
 				}
 				else
 				{
-					player.addChatComponentMessage(new ChatComponentText(PEAConfig.aetherCoinTotal + " Aether Coins are required to create a Alchemical Coin. You currently have " + playerAether.getAetherCoins() + "."));
+					player.addChatComponentMessage(new ChatComponentTranslation("peaether.coinmill.error1", PEAConfig.aetherCoinTotal, playerAether.getAetherCoins()));
 				}
 			}
 		}
