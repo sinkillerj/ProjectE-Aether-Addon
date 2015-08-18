@@ -6,6 +6,8 @@ tile.coinmill.name=Завод алхимических монет
 
 peaether.coinmill.tooltip1=Преобразует эфирные монетки в алхимические монетки и наоборот.
 
+peaether.coinmill.error1=Требуется %d эфирных монеток для создания алхимической монетки. У Вас только %d.
+
 peaether.alchemicalcoin.tooltip1=Источник EMC.
 peaether.alchemicalcoin.tooltip2=Можно преобразовать в эфирные монетки и
 peaether.alchemicalcoin.tooltip3=наоборот, используя монетный завод.
