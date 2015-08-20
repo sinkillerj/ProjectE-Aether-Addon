@@ -6,6 +6,8 @@ tile.coinmill.name=Alchemiemünzen-Fabrik
 
 peaether.coinmill.tooltip1=Konvertiert Äthermünzen zu Alchemiemünzen und umgekehrt.
 
+peaether.coinmill.error1=%d Äthermünzen werden benötigt, um eine Alchemiemünze herzustellen. Du hast im Moment %d.
+
 peaether.alchemicalcoin.tooltip1=Transmutierbare EMC-Quelle.
 peaether.alchemicalcoin.tooltip2=Konvertiere Äthermünzen zu Alchemiemünzen
-peaether.alchemicalcoin.tooltip3=und umgekehrt mit der Münzenfabrik.
+peaether.alchemicalcoin.tooltip3=(und umgekehrt) mit der Münzenfabrik.
