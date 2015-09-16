@@ -1,0 +1,14 @@
+
+itemGroup.peaetherCTab=ProjectE Addon do Aether
+
+item.alchemicalcoin.name=Moeda Alquímica
+
+tile.coinmill.name=Moinho de Moedas Alquímicas
+
+peaether.coinmill.tooltip1=Converte Moedas do Aether em Moedas Alquímicas e vice versa.
+
+peaether.coinmill.error1=%d Moedas do Aether são necessárias para criar uma Moeda Alquímica. No momento, você tem %d.
+
+peaether.alchemicalcoin.tooltip1=Fonte de EMC transmutável.
+peaether.alchemicalcoin.tooltip2=Convertida para Moedas do Aether e
+peaether.alchemicalcoin.tooltip3=vice versa usando o Moinho de Moedas
